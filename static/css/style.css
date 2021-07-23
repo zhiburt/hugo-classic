@@ -1,5 +1,5 @@
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         background-color: #393E41;
         color: white;
@@ -10,13 +10,12 @@
     }
 
     a {
-      color: #EBC3DB;
+      color: #609eca;
     }
 
     header {
       background: #393E41;
-      border-bottom: 2px dotted #EBC3DB;
-
+      border-bottom: 2px dotted #609eca;
     }
 
     .article-meta, .menu a {
@@ -33,10 +32,9 @@
     th, td { padding: 5px; }
     tr:nth-child(even) { background: #666 }
 
-}
+} */
 
-
-/* Light mode */
+ /* Light mode  */
 @media (prefers-color-scheme: light) {
     blockquote {
       background: #f9f9f9;
@@ -154,11 +152,20 @@ header .current a {
 
 /* Code Boxes */
 pre {
-  border: 2px solid #EBC3DB;
+  border: 2px solid #597181;
   padding: 1em;
   overflow-x: auto;
 }
-pre code { background: none; }
+pre code {
+  background: none;
+  border: none;
+  border-radius: none;
+}
+
+code {
+  border: 2px solid #597181;
+  border-radius: 2px;
+}
 
 /* Images, tables, misc. */
 img, iframe, video {
